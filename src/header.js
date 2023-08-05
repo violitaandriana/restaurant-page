@@ -1,8 +1,3 @@
-// import home, menu, contact
-import createHome from './home.js';
-import createMenu from './menu.js';
-import createContact from './contact.js';
-
 function createHeader() {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -34,27 +29,4 @@ function createHeader() {
     return header;
 }
 
-function createFooter() {
-    const footer = document.createElement('footer');
-    footer.classList.add('footer');
-    footer.textContent = 'EST. 2023';
-    return footer;
-}
-
-// home,menu,contact belum
-function initializeWebsite() {
-    const content = document.getElementById('content');
-    const header = createHeader();
-    // const home = createHome();
-    // const menu = createMenu();
-    const contact = createContact();
-    const footer = createFooter();
-
-    content.appendChild(header);
-    // content.appendChild(home);
-    // content.appendChild(menu);
-    content.appendChild(contact);
-    content.appendChild(footer);
-}
-
-export default initializeWebsite;
+export default createHeader;
