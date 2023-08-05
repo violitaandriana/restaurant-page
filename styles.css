@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 .header {
@@ -13,7 +14,7 @@
 }
 
 .navbar button {
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     border: none;
@@ -31,9 +32,6 @@
     padding: 20px 20px 0 50px;
     font-family: 'Borel', cursive;
     font-size: 36px;
-    /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Work Sans', sans-serif; */
 }
 
 .home-main {
@@ -53,23 +51,25 @@ img {
 .home-text h1 {
     font-family: 'Poppins', sans-serif;
     padding: 20px;
+    font-size: 1.5rem;
 }
 
 .home-text p {
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     padding-right: 50px;
-    font-size: 18px;
+    font-size: 0.9rem;
 }
 
-footer {
+.footer {
     font-family: 'Borel', cursive;
-    font-size: 20px;
+    font-size: 1rem;
     padding-top: 10px;
     text-align: center;
 }
 
-.menu-main, .contact-main {
+.menu-main,
+.contact-main {
     background-color: antiquewhite;
 }
 
@@ -91,7 +91,7 @@ footer {
     border: 1px solid black;
     text-align: center;
     height: 29vh;
-    width: 22vw;
+    width: 23vw;
     margin: 20px 40px;
     padding: 20px;
 }
@@ -100,7 +100,8 @@ footer {
     font-family: 'Borel', cursive;
 }
 
-.menu-desc, .menu-price {
+.menu-desc,
+.menu-price {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding-top: 10px;
@@ -111,9 +112,23 @@ footer {
     text-decoration: underline;
 }
 
-.contact-main { 
+.contact-main {
     text-align: center;
     font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 30px;
+}
+
+@media (max-width: 716px) {
+    .header {
+        display: block;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .home-main {
+        display: block;
+    }
 }
