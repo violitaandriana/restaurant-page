@@ -19,7 +19,7 @@ function main() {
     const footer = createFooter();
 
     homeButton.addEventListener('click', () => {
-        alert('mainhomecss')
+        // alert('mainhomecss')
         resetScreen();
         const home = createHome();
         content.appendChild(home);
@@ -28,7 +28,7 @@ function main() {
     });
 
     menuButton.addEventListener('click', () => {
-        alert('mainmenu')
+        // alert('mainmenu')
         resetScreen();
         const menu = createMenu();
         content.appendChild(menu);
@@ -37,7 +37,7 @@ function main() {
     });
 
     contactButton.addEventListener('click', () => {
-        alert('contactloop')
+        // alert('contactloop')
         resetScreen();
         const contact = createContact();
         content.appendChild(contact);
